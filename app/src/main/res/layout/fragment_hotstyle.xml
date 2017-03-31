@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="enjoytouch.com.redstar.fragment.HotstyleFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        style="@style/Title"
+        android:background="@color/titlecolor3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="人气爆款"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <enjoytouch.com.redstar.selfview.CustomSwipeToRefresh
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+        <enjoytouch.com.redstar.selfview.AutoLoadRecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"/>
+    </enjoytouch.com.redstar.selfview.CustomSwipeToRefresh>
+
+</LinearLayout>

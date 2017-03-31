@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enjoytouch.com.redstar.activity.StylistActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <enjoytouch.com.redstar.selfview.observableScrollViewo.ObservableScrollView
+            android:id="@+id/stylist_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/image_bg"
+                            android:layout_width="match_parent"
+                            fresco:placeholderImage="@drawable/placeholder_rectangle"
+                            fresco:placeholderImageScaleType="fitCenter"
+                            android:layout_height="220dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/pic"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            fresco:actualImageScaleType="centerCrop"
+                            fresco:placeholderImage="@drawable/tou"
+                            fresco:placeholderImageScaleType="centerCrop"
+                            fresco:roundAsCircle="true" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/design_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="HJHHU"
+                    android:textColor="@color/text01"
+                    android:textSize="@dimen/text_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/desc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我很好"
+                    android:textColor="@color/text01"
+                    android:textSize="@dimen/text_small"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text97" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cancelpinpai"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="所属品牌"
+                            android:textColor="@color/text04"
+                            android:textSize="@dimen/text_middle" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pinpai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/logoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/back_round_shangpin">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/logo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:padding="1dp"
+                                fresco:placeholderImage="@drawable/placeholder_square"
+                                fresco:placeholderImageScaleType="fitCenter"
+                                fresco:roundBottomLeft="true"
+                                fresco:roundBottomRight="true"
+                                fresco:roundTopLeft="true"
+                                fresco:roundTopRight="true"
+                                fresco:roundedCornerRadius="5dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/logoin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="12"
+                                android:text="漾美 MAXTuer"
+
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_large" />
+
+                            <TextView
+                                android:id="@+id/text02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text01"
+                                android:layout_toRightOf="@+id/logo"
+
+                                android:maxLength="13"
+                                android:text="在美丽中传递生活的喜悦"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_middle" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/zhankai" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </enjoytouch.com.redstar.selfview.observableScrollViewo.ObservableScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/stylist_rl"
+        style="@style/Title"
+        android:alpha="0.1"
+        android:background="@color/touming">
+
+        <include layout="@layout/layout_back"></include>
+
+    </RelativeLayout>
+</RelativeLayout>

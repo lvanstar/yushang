@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#40000000">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="12dp"
+        android:background="#c0000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提示"
+                android:textSize="18sp"
+                android:textColor="#ffffff"/>
+            
+            <ImageView
+                android:id="@+id/info_close"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"/>
+        
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info_info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.本平台内的优惠券信息,以商家的最终解释权为准.\n2.请在兑换优惠券之前,看清优惠券详情说明是否可退,以免给您造成不便.\n3.优惠券过期则无法正常使用.请注意优惠券本身的到期时间.\n4.关于优惠券兑换,使用产生的系列问题,请发送邮件至CS@yushang001.com.我们会在收到邮件后,尽快处理并回复您."
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

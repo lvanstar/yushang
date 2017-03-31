@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:id="@+id/advert_detils_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/w3"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/advert_detils_share"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/w5"
+                android:scaleType="fitCenter"
+                android:paddingTop="2dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/advert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广告详情"
+            android:textSize="18dp"
+            android:textColor="@color/title"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="21"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.5">
+
+            <WebView
+                android:id="@+id/advert_detils_wb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/ad_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="#c0000000"
+                android:text="广告60秒"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/ad_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="今日已经领取过相应的M元，明天再来吧"
+                android:background="#c0000000"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/button3">
+
+            <ImageView
+                android:id="@+id/advert_detils_left"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/turn_left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp" />
+
+            <ImageView
+                android:id="@+id/advert_detils_right"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/turn_right"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/advert_detils_left"
+                android:layout_marginLeft="20dp" />
+
+            <ImageView
+                android:id="@+id/advert_detils_turn"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/turnback"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/advert_detils_right"
+                android:layout_marginLeft="20dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/dd_point"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_money_real"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/discount_detils_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20000"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dd_point"
+                    android:layout_marginLeft="5dp" />
+                </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

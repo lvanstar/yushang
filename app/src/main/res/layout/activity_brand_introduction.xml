@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/homepageback"
+    tools:context="enjoytouch.com.redstar.activity.BrandIntroductionActivity">
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/defaulttxt2"
+        android:id="@+id/relativeLayout">
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back"></include>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/text01"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/wv_brand"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"></WebView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/zan"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:onClick="left"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/turn_left"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"></View>
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:onClick="right"
+            android:layout_gravity="center"
+            android:src="@drawable/turn_right"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"></View>
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:onClick="flash"
+            android:layout_gravity="center"
+            android:src="@drawable/turnback"/>
+    </LinearLayout>
+
+
+</LinearLayout>

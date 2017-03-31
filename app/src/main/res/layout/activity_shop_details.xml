@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <enjoytouch.com.redstar.selfview.observableScrollViewo.ObservableScrollView
+            android:id="@+id/shop_details_os"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/shop_details_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_viewpage_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal"></LinearLayout>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/text_sale_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="48px"
+                                android:textColor="@color/text_lv"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_refund_enable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="56px"
+                                android:background="@drawable/text_view_boder10"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:text="不可退"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/text_refund_able"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="56px"
+                                android:background="@drawable/text_view9"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:text=" 可 退 "
+                                android:textColor="@color/white"
+                                android:visibility="invisible" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="48px"
+                            android:textColor="@color/text01"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/text_subtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="48px"
+                            android:textColor="@color/text01" />
+
+                        <TextView
+                            android:id="@+id/desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="86px"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/text11" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_zhankai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="46px"
+                            android:gravity="right"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:id="@+id/zhankai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="36dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingBottom="20px">
+
+                                <!--<TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="展开"
+                                    android:textColor="@color/text12" />-->
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/zhankai2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/shou"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="35dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                               <!-- <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="收回"
+                                    android:textColor="@color/text12" />-->
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/shou" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shejishi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="48px"
+                        android:text="设计师"
+                        android:textColor="@color/text04" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/design_id"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="52px"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/design_snap"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                fresco:placeholderImage="@drawable/tou"
+                                fresco:placeholderImageScaleType="fitCenter"
+                                fresco:roundAsCircle="true"
+                                fresco:roundedCornerRadius="5dp" />
+
+                            <TextView
+                                android:id="@+id/design_name"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/text01"
+                                android:textSize="@dimen/text_small"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/design_id_sale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="52px"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/design_snap_sale"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                fresco:placeholderImage="@drawable/tou"
+                                fresco:placeholderImageScaleType="fitCenter"
+                                fresco:roundAsCircle="true"
+                                fresco:roundedCornerRadius="5dp" />
+
+                            <TextView
+                                android:id="@+id/design_name_sale"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/text01"
+                                android:textSize="@dimen/text_small"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_detile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="48px"
+                        android:text="商品详情"
+                        android:textColor="@color/text04" />
+
+                    <TextView
+                        android:id="@+id/contentsv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="86px"
+                        android:layout_marginRight="35dp"
+                        android:textColor="@color/text11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shangping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="48px"
+                        android:text="商品品牌"
+                        android:textColor="@color/text04" />
+
+                    <LinearLayout
+                        android:id="@+id/pinpai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48px"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/back_round_shangpin">
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/iv_shopitem"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                fresco:placeholderImage="@drawable/placeholder_square"
+                                fresco:placeholderImageScaleType="fitCenter"
+                                fresco:roundBottomLeft="true"
+                                fresco:roundBottomRight="true"
+                                fresco:roundTopLeft="true"
+                                fresco:roundTopRight="true"
+                                fresco:roundedCornerRadius="5dp"
+                                android:padding="1dp"/>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="40px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sigin_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text01"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/sigin_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text01" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"></RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35px"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/zhankai" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="96px"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="96px">
+
+                    <TextView
+                        android:id="@+id/text_notice_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/text_view_boder11"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="13dp"
+                        android:paddingTop="8dp"
+                        android:text="售后须知"
+                        android:textColor="@color/text_lv" />
+                </RelativeLayout>
+            </LinearLayout>
+        </enjoytouch.com.redstar.selfview.observableScrollViewo.ObservableScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_lv"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_lv"
+                    android:gravity="center"
+                    android:text="立即购买"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#e9e9e9"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="#c4c4c4" />
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#e9e9e9"
+                    android:gravity="center"
+                    android:text="商品已售罄"
+                    android:textColor="#c4c4c4" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shop_details_rl"
+        style="@style/Title"
+        android:alpha="0.0"
+        android:background="@color/touming"></RelativeLayout>
+
+    <RelativeLayout style="@style/Title">
+
+        <include layout="@layout/layout_back"></include>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon2_2"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:id="@+id/zan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/shoucang2"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/text_collect_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="9dp"
+                android:text="21"
+                android:shadowColor="#FF666666"
+                android:shadowRadius="10"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+

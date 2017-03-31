@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enjoytouch.com.redstar.activity.CommentsListActivity">
+
+
+
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/defaulttxt2"
+        android:id="@+id/relativeLayout">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网友评论"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/text01"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/xian"
+        android:layout_below="@id/relativeLayout"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_comments"
+        android:layout_below="@id/xian"
+        android:background="@color/defaulttxt2"/>
+</RelativeLayout>

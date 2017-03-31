@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/home"
+    android:background="#f8f8f8">
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:id="@+id/location_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/w3" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="当前城市-上海"
+            android:textColor="@color/title"
+            android:textSize="18dp" />
+    </RelativeLayout>-->
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/title">
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back">
+        </include>
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择城市—上海"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian2"/>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="21"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dbdcdc">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp">
+                <ImageView
+                    android:id="@+id/ivpostion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/position"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/alpha"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/loctiontext"
+                    android:textSize="12dp"
+                    android:paddingLeft="2dp"
+                    android:text="当前GPS定位"
+                    android:layout_toRightOf="@id/ivpostion"
+                    />
+            </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/xian"
+                    android:layout_below="@id/rl1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/location_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/location_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="上海"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+&lt;!&ndash;                <TextView
+                    android:id="@+id/location_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS获取"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/location_address"/>&ndash;&gt;
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.5">
+
+                <ListView
+                    android:id="@+id/city_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E8E8E8"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <enjoytouch.com.redstar.selfview.MyLetterListView
+            android:id="@+id/cityLetterListView"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            />
+    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1f1ed">
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp">
+                    <ImageView
+                        android:id="@+id/ivpostion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/position"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/alpha"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/loctiontext"
+                        android:textSize="14dp"
+                        android:paddingLeft="2dp"
+                        android:text="当前GPS定位"
+                        android:layout_toRightOf="@id/ivpostion"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/xian"
+                    android:layout_below="@id/rl1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/location_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/location_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="上海"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8.5">
+                <ListView
+                    android:id="@+id/city_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E8E8E8"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </LinearLayout>
+        <enjoytouch.com.redstar.selfview.MyLetterListView
+            android:id="@+id/cityLetterListView"
+            android:layout_width="30dip"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            />
+<!--        <enjoytouch.com.redstar.selfview.tagview.QuickLocationRightTool
+            android:id="@+id/cityRight"
+            android:layout_width="20dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+        </enjoytouch.com.redstar.selfview.tagview.QuickLocationRightTool>-->
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="enjoytouch.com.redstar.activity.ShowOneImageActivity">
+    <LinearLayout
+        style="@style/Title"
+        android:orientation="horizontal"
+        android:background="@color/bg">
+        <include android:id="@+id/back"
+            layout="@layout/layout_back"></include>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="确定"
+            android:layout_weight="0.12"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"/>
+</LinearLayout>

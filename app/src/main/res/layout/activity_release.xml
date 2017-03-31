@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="enjoytouch.com.redstar.activity.ReleaseActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        style="@style/Title"
+        android:background="@color/bg">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我要说两句"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large" />
+
+        <RelativeLayout
+            android:id="@+id/rl_release"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提交"
+                android:textColor="@color/band"
+                android:textSize="@dimen/text_middle" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="我的感受..."
+            android:maxLength="140"
+            android:minHeight="200dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textColor="@color/text"
+            android:gravity="top|left"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/text_abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="15dp"
+            android:text="0/140"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/xiahuaxian" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/defand"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        ></View>
+
+    <GridView
+        android:id="@+id/rl_push"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/ll_zan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_cream"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_half"
+                android:gravity="center"
+                android:text="拍照"
+                android:textColor="@color/text01" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_nan"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_half"
+                android:gravity="center"
+                android:text="本地照片添加"
+                android:textColor="@color/text01" />
+
+            <TextView
+                android:id="@+id/tv_false"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_nv"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/circle_half"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text01" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

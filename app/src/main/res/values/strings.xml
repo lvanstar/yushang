@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">寓上</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_input">SearchInputActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_my_favorite">MyFavoriteActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_brand_details">BrandDetailsActivity</string>
+    <string name="title_activity_discount_list">DiscountListActivity</string>
+    <string name="title_activity_brand_list">BrandListActivity</string>
+    <string name="title_activity_shop_detils">ShopDetilsActivity</string>
+    <string name="title_activity_all_shop">AllShopActivity</string>
+    <string name="title_activity_activity_big_stop_image">ActivityBigStopImage</string>
+    <string name="title_activity_comments_list">CommentsListActivity</string>
+    <string name="title_activity_make_comments">MakeCommentsActivity</string>
+    <string name="title_activity_reserve_money">ReserveMoneyActivity</string>
+    <string name="title_activity_payment_details">PaymentDetailsActivity</string>
+    <string name="title_activity_the_order_detil2">TheOrderDetil2Activity</string>
+    <string name="title_activity_top_up">TopUpActivity</string>
+    <string name="title_activity_top_up__ok_">TopUp_Ok_Activity</string>
+    <string name="title_activity_the_order">TheOrderActivity</string>
+    <string name="title_activity_sweep_code">SweepCodeActivity</string>
+    <string name="title_activity_pay_results">PayResultsActivity</string>
+    <string name="title_activity_recommended_code">RecommendedCodeActivity</string>
+    <string name="title_activity_replace_phone">ReplacePhoneActivity</string>
+    <string name="title_activity_bind_phone">BindPhoneActivity</string>
+    <string name="title_activity_hot_style_details">HotStyleDetailsActivity</string>
+    <string name="title_activity_make_order">MakeOrderActivity</string>
+    <string name="title_activity_address">AddressActivity</string>
+    <string name="scan_text">将二维码放入框内,即可自动扫描</string>
+    <string name="title_activity_one_big_image">OneBigImageActivity</string>
+    <string name="title_activity_my_collect_hot">MyCollectHotActivity</string>
+    <string name="title_activity_my_brand">MyBrandActivity</string>
+    <string name="title_activity_my_store">MyStoreActivity</string>
+    <string name="title_activity_my_the_oder">MyTheOderActivity</string>
+    <string name="title_activity_order_detils">OrderDetilsActivity</string>
+    <string name="activity_scan_title">二维码</string>
+    <string name="title_activity_all_brand">AllBrandActivity</string>
+    <string name="title_activity_my_address">MyAddressActivity</string>
+
+    <string name="loading">数据加载中...</string>
+    <string name="title_activity_add_address">AddAddressActivity</string>
+    <string name="title_activity_ialso_comment">IAlsoCommentActivity</string>
+
+    <string name="weixin_not_install">您还未安装微信客户端</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_toast_obtain_code_success">获取 Code 成功</string>
+    <string name="weibosdk_demo_toast_obtain_code_failed">获取 Code 失败</string>
+    <string name="weibosdk_demo_toast_obtain_token_success">获取 Token 成功</string>
+    <string name="weibosdk_demo_toast_obtain_token_failed">获取 Token 失败</string>
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博发起的请求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客户端请求消息失败</string>
+
+    <string name="input_address">请选择您的收货地址</string>
+    <string name="details_value">1、您选择好心仪的爆款商品后，完成在线定金支付。\n
+2、商家将在您完成定金支付的3个工作日内致电您确认订单及尾款支付方式。\n
+3、请您根据与商家确认的支付方式完成尾款支付。\n
+4、商家将在收到尾款后的3个工作日内致电您进行发货/送货（安装）的时间确认
+</string>
+
+    <string name="title">提示</string>
+    <string name="value">您需要选择一个收货地址!</string>
+    <string name="top_up">请选择支付方式</string>
+    <string name="top_up_moeny">请选择充值金额</string>
+    <string name="top_up_moeny_in">请输入正确充值金额</string>
+    <string name="title_activity_select_popup">SelectPopupActivity</string>
+    <string name="title_activity_brand_all_shop">BrandAllShopActivity</string>
+    <string name="band_title">绑定手机号</string>
+    <string name="band">绑定</string>
+    <string name="register">注册</string>
+    <string name="title_activity_brand_introduction">BrandIntroductionActivity</string>
+    <string name="top_up_title_true">充值成功</string>
+    <string name="top_up_title_false">充值失败</string>
+    <string name="share_title">推荐一个购买家具的应用！</string>
+    <string name="share_amount">寓上是专业的家具建材促销优惠平台，通过互联网技术为消费者提供一站式家具建材购买服务</string>
+    <string name="contact_title">联系我们</string>
+    <string name="html_title">广告详情</string>
+    <string name="info_title">产品详情</string>
+    <string name="title_activity_brand_search_input">BrandSearchInputActivity</string>
+    <string name="title_activity_brand_search_result">BrandSearchResultActivity</string>
+    <string name="phone01">手机号码不能为空</string>
+    <string name="phone2">手机号码格式不正确</string>
+    <string name="code">验证码不正确</string>
+    <string name="loadding_error">数据获取失败</string>
+    <string name="loaddings">努力加载...</string>
+    <string name="no_result">已经全部加载完毕</string>
+
+
+    <string name="about">“寓上”APP由上海寓上信息科技有限公司独立开发并运营，旨在把好的东西分享给别人，让更多的人找到属于自己的家居生活方式。
+我们持续为用户挖掘国内外最前沿的时尚家居品牌，精挑细选实用的家居生活用品，从品质、设计、环保、实用、性价比等多个角度，为都市精英时尚人群提供多种风格的家居选择。</string>
+    <string name="lifestyle">Make up your own lifestyles !</string>
+    <string name="type">类型(多选)</string>
+    <string name="title_activity_logistics">logisticsActivity</string>
+
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="lianxi">一、联系客服</string>
+    <string name="shangwu">二、商务合作</string>
+    <string name="genduo">三、更多合作</string>
+    <string name="tell">电话: </string>
+    <string name="tell2">400-607-5500</string>
+    <string name="content">服务时段: 9:00-21:00\nEmail:cs@yushang001.com\n服务时段以外，您也可以通过邮件联系我们</string>
+    <string name="content2">Email:bd@yushang001.com\n此邮箱仅处理商务合作，不回复任何客服问题</string>
+    <string name="content3">微信公众号：搜索并添加“寓上”\n新浪官方微博:搜索并关注“寓上”\n更多惊喜活动、更多推荐、更多品牌......</string>
+
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="refund_value">您的退款申请已经提交,我们的客服人员会尽快联系您</string>
+</resources>

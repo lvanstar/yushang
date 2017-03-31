@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_pay"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:id="@+id/x"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/x_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确定要离开？"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/x"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@color/text01"
+                   />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/middle_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="下单后30分钟内未支付成功，"
+                android:textColor="@color/text10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="订单将被取消，请尽快完成付款！"
+                android:gravity="center"
+                android:textColor="@color/text10"
+                android:textSize="15dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/band01" />
+
+            <LinearLayout
+                android:id="@+id/execute"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_a"
+                    >
+
+                    <TextView
+                        android:id="@+id/ok"
+                        style="@style/dialog_tv"
+                        android:text="继续支付"
+                        android:textColor="@color/lan"
+                        android:textSize="@dimen/text_large"
+                        android:background="@drawable/dialog_selector"
+                      />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#dedede" />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_b">
+
+                    <TextView
+                        android:id="@+id/cancel"
+                        style="@style/dialog_tv"
+                        android:text="确认离开"
+                        android:textColor="@color/lan"
+                        android:textSize="@dimen/text_large"
+                        android:background="@drawable/dialog_selector"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="enjoytouch.com.redstar.activity.AfterServiceActivity">
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/title"
+        android:id="@+id/relativeLayout">
+
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back"></include>
+        <TextView
+            android:id="@+id/lll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="售后须知"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/vb_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

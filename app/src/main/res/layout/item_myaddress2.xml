@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/xian3"
+    android:layout_height="wrap_content"
+    >
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/iv"
+                android:src="@drawable/pay_unselected"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_width="22dp"
+                android:layout_height="25dp"></ImageView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="14dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_small"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text"
+                        android:text="收货人: "/>
+                    <TextView
+                        android:id="@+id/tv_shouhuoren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_small"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text"
+                        android:text="XXX"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"></View>
+                    <TextView
+                        android:id="@+id/tv_dianhua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small"
+                        android:text="XXXXXXX"
+                       />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_dizhi666"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/text"
+                    />
+
+            </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/youjiantouhui"-->
+                <!--/>-->
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"></View>
+
+
+
+
+
+
+
+</LinearLayout>

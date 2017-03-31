@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/bg">
+        <include
+            layout="@layout/layout_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我关注的趣处"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <RelativeLayout
+        android:id="@+id/Myquchu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/sr_none"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/a24"/>
+
+        <TextView
+            android:id="@+id/false1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/sr_none"
+            android:layout_marginTop="20dp"
+            android:text="您还没有关注过趣处哦！"
+            android:textSize="16sp"
+            android:textColor="@color/text55"/>
+
+    </RelativeLayout>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/myquchu_xrecy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv01"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/newlogo"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3"
+            android:padding="4dp">
+
+
+            <ImageView
+                android:id="@+id/discount_money_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/icon_money_real"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/discount_money_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的钱包:"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/discount_money_icon"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:id="@+id/advert_mymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/discount_money_text"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/logo_big"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/-->
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/advert_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="0dp"
+                android:divider="@null"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

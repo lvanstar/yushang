@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/logisticslist_rl"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logisticslist_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/logistics_round"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/logisticslist_iv2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/timeline_green"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"/>
+                <View
+                    android:id="@+id/logisticslist_xian"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/xian3"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="visible"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/logisticslist_rl">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[苏州市]快递员张三已揽件，快递很快从苏州出发，发往上海杨浦"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text04"
+                    android:textSize="@dimen/text_middle"
+                    android:autoLink="email|phone|web"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/text04"
+                    android:text="2016-5-17  5:30:23"
+                    android:textSize="@dimen/text_small"
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>

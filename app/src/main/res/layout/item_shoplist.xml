@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/find"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="The Back Roomate"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_middle" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_shop2"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/time_icon"
+                android:text="周一至周四 11:00-22:00 "
+                android:textColor="@color/addres"
+                android:textSize="@dimen/text_middle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+           >
+
+            <ImageView
+                android:id="@+id/tell_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tel"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tell_icon"
+                android:text="021-1548655"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_middle" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/shop_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/position2"
+                android:scaleType="fitCenter"
+                />
+
+            <TextView
+                android:id="@+id/shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text"
+                android:layout_toRightOf="@+id/shop_icon"
+                android:text="上海市静安区富民路114号"
+                android:textSize="@dimen/text_middle"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

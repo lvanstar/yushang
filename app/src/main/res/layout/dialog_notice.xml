@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/notice_Rl01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/notice_Sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@drawable/initialize"
+            fresco:placeholderImageScaleType="centerInside"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice_Rl02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/notice_colse_Iv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/notice_back" />
+    </RelativeLayout>
+
+</RelativeLayout>

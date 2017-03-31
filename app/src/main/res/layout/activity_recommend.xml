@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="enjoytouch.com.redstar.activity.RecommendActivity">
+
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要推荐"
+            android:textColor="@color/defaulttxt"
+            android:textSize="@dimen/text_large" />
+
+        <include layout="@layout/layout_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/defaulttxt2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:visibility="visible">
+
+                <!--<enjoytouch.com.redstar.selfview.XCRoundRectImageView-->
+                <!--android:id="@+id/pic"-->
+                <!--android:layout_width="370px"-->
+                <!--android:layout_height="250px"-->
+                <!--android:layout_centerInParent="true"/>-->
+              <RelativeLayout
+                  android:id="@+id/toselect"
+                  android:layout_width="200dp"
+                  android:layout_height="132dp"
+                  android:background="@drawable/camera"
+                  android:layout_centerInParent="true">
+                  <ImageView
+                      android:id="@+id/pic"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_centerInParent="true"
+                      android:layout_margin="1.8dp"/>
+                  <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                      <!--android:id="@+id/pic"-->
+                      <!--android:layout_width="370px"-->
+                      <!--android:layout_height="250px"-->
+                      <!--android:layout_centerInParent="true"-->
+                      <!--fresco:placeholderImage="@drawable/camera"-->
+                      <!--fresco:placeholderImageScaleType="centerCrop"-->
+                      <!--fresco:actualImageScaleType="fitCenter"-->
+                      <!--fresco:roundedCornerRadius="10dp" />-->
+
+              </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/recommend_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="店名"
+                    android:textColorHint="@color/button"
+                    android:textSize="@dimen/text_small" />
+                <EditText
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/recommend_name"
+                    android:background="@null"
+                    android:lines="1"
+                    android:maxLength="20"
+                    android:padding="2dp"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_middle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/xian" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型(多选)"
+                    android:textColor="@color/button"
+                    android:textSize="@dimen/text_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <GridView
+                        android:id="@+id/recommend_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="4" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="地址"
+                    android:textSize="@dimen/text_small" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:maxLength="140"
+                    android:text=""
+                    android:textColor="@color/text"
+                    android:textColorHint="@color/button"
+                    android:textSize="@dimen/text_middle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/xian" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="推荐理由"
+                        android:textColor="@color/button"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/text_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="0/140"
+                        android:textColor="@color/button"
+                        android:textSize="@dimen/text_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                    android:minHeight="90dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:maxLength="140"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/text"
+                    android:textColorHint="@color/button"
+                    android:textSize="@dimen/text_middle" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/xian" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/text_pinglun"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="enjoytouch.com.redstar.activity.BrandSearchResultActivity">
+    <LinearLayout
+        style="@style/Title"
+        android:background="@color/title"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back">
+        </include>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp">
+            <TextView
+                android:id="@+id/result_te_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:textColor="@color/text02"
+                android:textSize="@dimen/text_middle"
+                android:background="@drawable/text_view_border3"
+                android:gravity="center_vertical|left"
+                android:layout_toRightOf="@id/si_hint"/>
+            <ImageView
+                android:id="@+id/si_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/guanbi"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sr_select"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/discount_select_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/w2"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xian"
+        android:background="@color/xian"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/result_sr_nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/sr_none"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/a24"/>
+            <TextView
+                android:id="@+id/false1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sr_none"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="没有找到相关上品"
+                android:textSize="16sp"
+                android:textColor="@color/text55"/>
+
+
+
+        </RelativeLayout>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/hifhest_result_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

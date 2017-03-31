@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enjoytouch.com.redstar.activity.SearchResultActivity"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        style="@style/Title"
+        android:background="@color/title"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/back"
+            layout="@layout/layout_back">
+        </include>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/text_view_border3">
+            <ImageView
+                android:id="@+id/si_hint"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search"
+                android:scaleType="fitStart"/>
+            <EditText
+                android:id="@+id/sr_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:background="@drawable/text_view_border3"
+                android:gravity="center_vertical|left"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:imeOptions="actionSearch"
+                android:layout_toRightOf="@id/si_hint"/>
+            <ImageView
+                android:id="@+id/si_close"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/guanbi"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+<!--        <TextView
+            android:id="@+id/sr_keyword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="6dp"
+            android:background="@drawable/text_view_boder5"
+            android:gravity="center_vertical|left"
+            android:textColor="#000000"
+            android:textSize="18sp"/>-->
+
+        <RelativeLayout
+            android:id="@+id/sr_select"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/discount_select_icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/w2"
+                android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xian"
+        android:background="@color/xian"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:background="#f3f3f3">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/icon_money_real"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/discount_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/homepageback">
+
+
+            <RelativeLayout
+                android:id="@+id/sr_nothing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/sr_none"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/a24"/>
+
+                <TextView
+                    android:id="@+id/false1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@id/sr_none"
+                    android:layout_marginTop="20dp"
+                    android:text=" 抱歉，没有找到相关数据 \n请改变搜索条件重新尝试搜索"
+                    android:textSize="16sp"
+                    android:textColor="#9e9e9e"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/sr_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:visibility="visible"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:listSelector="#00000000"/>
+            <enjoytouch.com.redstar.selfview.CustomSwipeToRefresh
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000">
+                <enjoytouch.com.redstar.selfview.AutoLoadRecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"/>
+            </enjoytouch.com.redstar.selfview.CustomSwipeToRefresh>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

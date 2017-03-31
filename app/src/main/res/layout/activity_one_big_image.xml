@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopnametext"
+    android:orientation="vertical"
+    tools:context="enjoytouch.com.redstar.activity.OneBigImageActivity">
+
+    <RelativeLayout
+        style="@style/Title">
+        <include
+            layout="@layout/layout_back"></include>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+            <enjoytouch.com.redstar.selfview.photopicker.widget.TouchImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_pager"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/one_big_coent"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="林氏木业沙发，单人沙发"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_middle"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="甄选上品"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large"/>
+
+        <RelativeLayout
+            android:id="@+id/highest_serch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_srarch"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/higest_car"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:id="@+id/higest_car_iv"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/icon_shop"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/higest_car_Tv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/higest_car_iv"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/red_round"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/highest_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"/>
+        <ImageView
+            android:id="@+id/homepage_up_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/up"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40px"
+            android:layout_marginRight="35px"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

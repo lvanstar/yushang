@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large"
+            android:layout_centerInParent="true"/>
+
+        <include
+            layout="@layout/layout_back"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/textwuliu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流公司:"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_middle" />
+
+            <TextView
+                android:id="@+id/sf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/textwuliu"
+                android:text="顺丰快递"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_middle" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="15dp"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/textdan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流单号:"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_middle"
+                />
+            <TextView
+                android:id="@+id/danghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="423546688932452"
+                android:textSize="@dimen/text_middle"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/text"
+                android:textIsSelectable="true"
+                android:layout_toRightOf="@+id/textdan"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/xian3"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:id="@+id/logistics_tv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11111"
+                android:textColor="@color/text05"
+                android:textSize="@dimen/text_middle"/>
+            <TextView
+                android:id="@+id/logistics_tv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11111"
+                android:textColor="@color/text05"
+                android:layout_marginTop="5dp"
+                android:autoLink="email|phone|web"
+                android:layout_below="@+id/logistics_tv01"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/text_middle"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

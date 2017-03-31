@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large" />
+
+       <include android:id="@+id/back"
+           layout="@layout/layout_back">
+
+       </include>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xian"
+        android:background="@color/xian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.5"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo_r" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="寓上"
+                android:textColor="@color/text01"
+                android:textSize="@dimen/text_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/banben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text04"
+                android:text="当前版本号： 3.0.0"
+                android:textSize="@dimen/text_middle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/text_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text04"
+                        android:textSize="@dimen/text_middle"
+                        android:lineSpacingExtra="1dp"
+                        android:text="“寓上”APP由上海寓上信息科技有限公司独立开发并运营,旨在把好的东西分享给别人,让更多的人找到属于自己的家居生活方式。"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_content"
+                        android:textColor="@color/text04"
+                        android:textSize="@dimen/text_middle"
+                        android:lineSpacingExtra="1dp"
+                        android:text="我们持续为用户挖掘国内外最前沿的时尚家居品牌,精挑细选实用的家居生活用品，从品质、设计、环保、实用、性价比等多个角度,为都市精英时尚人群提供多种风格的家居选择。"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true">
+                    <TextView
+                        android:id="@+id/text001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="做自已的家具设计师"
+
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/text04"
+                        android:textSize="@dimen/text_middle"
+                        android:visibility="visible"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lifestyle"
+                        android:textColor="@color/text04"
+                        android:textSize="@dimen/text_middle"
+                        android:layout_below="@+id/text001"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

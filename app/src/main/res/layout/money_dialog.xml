@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/money_dialog_ll">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="190dp"
+        android:background="@drawable/ec_rectangle"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            >
+
+            <TextView
+                android:id="@+id/money_dialog_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提示"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/moeny_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定退出登录？"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_below="@+id/money_dialog_text1"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/moeny_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12365吗？"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/moeny_number_tv"
+                android:layout_marginTop="6dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#D1D1D1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cancel_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="20sp"
+                android:textColor="#ff1E90FF" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#D1D1D1" />
+
+            <TextView
+                android:id="@+id/confirm_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定转赠"
+                android:textSize="20sp"
+                android:textColor="#ff1E90FF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

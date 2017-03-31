@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="130dp"
+    android:layout_height="180dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_white_bian"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/rl_myhotshop"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/pic_003"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_myhot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ImageView
+                android:id="@+id/iv_zuoxuan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dot_white_222"
+                android:background="#00000000"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#80000000"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="¥  "
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/tv_isblance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="00.00"
+                    android:singleLine="true"
+                    android:textColor="@color/shuang11"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_cont"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="9sp"
+            android:layout_margin="10dp"
+            android:text="顾家家纺 大提花婚庆四件套 大红结婚套装..."
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

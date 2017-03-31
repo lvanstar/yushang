@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enjoytouch.com.redstar.activity.SearchInputActivity"
+    android:orientation="vertical"
+    android:id="@+id/home"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        style="@style/Title"
+        android:background="@color/title"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/si_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingLeft="36dp"
+                android:hint="搜索品牌关键字"
+                android:textColorHint="@color/sousuotext"
+                android:background="@drawable/text_view_border3"
+                android:gravity="center_vertical|left"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:imeOptions="actionSearch"
+                android:maxLength="20"/>
+
+            <ImageView
+                android:id="@+id/si_hint"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/search"
+                android:scaleType="fitStart"/>
+
+            <ImageView
+                android:id="@+id/si_close"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/guanbi"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/si_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xian"
+        android:background="@color/xian"/>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="21"
+        android:orientation="vertical"
+        android:background="@color/homepageback">
+
+        <TextView
+            android:id="@+id/si_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:background="#ffffff"
+            android:textColor="#9e9e9e"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/si_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/homepageback">
+        <TextView
+            android:id="@+id/si_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:background="@color/homepageback"
+            android:textColor="#9e9e9e"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/si_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="16dp"
+            android:background="@color/homepageback"
+            android:textColor="#9e9e9e"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:text="清空历史记录"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/false1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:background="@color/homepageback"
+            android:layout_below="@id/si_title"
+            android:text="未搜索到结果"
+            android:visibility="gone"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/si_title"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/si_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:src="@drawable/b1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

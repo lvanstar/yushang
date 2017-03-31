@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/back_zhan"
+    android:background="@color/homepageback">
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/title">
+        <include
+            layout="@layout/layout_back">
+        </include>
+        <RelativeLayout
+            android:id="@+id/advert_detils_share"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/advert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xian"
+        android:background="@color/xian" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/sr_nothing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/sr_none"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/yu2"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/false1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/sr_none"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="您还没有下单喔!"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/text55"/>
+
+        </RelativeLayout>
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/my_order_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.jcodecraeer.xrecyclerview.XRecyclerView>
+    </FrameLayout>
+
+</LinearLayout>
+
+

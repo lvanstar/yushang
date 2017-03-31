@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_attention_sv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            fresco:placeholderImage="@drawable/pic_3"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundedCornerRadius="2dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="false"
+            fresco:roundBottomRight="false"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/item_attention_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CASA PAGODA"
+                android:textColor="@color/text01"
+                android:textSize="@dimen/text_small"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/item_attention_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CASA PAGODA"
+                android:textColor="@color/text02"
+                android:layout_below="@+id/item_attention_name"
+                android:textSize="@dimen/text_small2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

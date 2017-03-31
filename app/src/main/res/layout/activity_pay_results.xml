@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/xian3"
+    tools:context="enjoytouch.com.redstar.activity.PayResultsActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        style="@style/Title"
+        android:background="@color/bg">
+
+        <include layout="@layout/layout_back"></include>
+
+        <TextView
+            android:id="@+id/pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="支付成功"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/xian"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/pay_result_Rl"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/pay_Iv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_sucess" />
+
+                <TextView
+                    android:id="@+id/text_resust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pay_Iv"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="支付成功！"
+                    android:textColor="@color/text01"
+                    android:textSize="@dimen/text_middle" />
+
+                <TextView
+                    android:id="@+id/pay_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_resust"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="支付失败的错误信息"
+                    android:textColor="@color/text01"
+                    android:textSize="@dimen/text_small"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pay_ok_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pay_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:textSize="@dimen/text_small"
+                    android:text="订单号：13333333333333" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/pay_ok_look"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/text_pinglun"
+                android:gravity="center"
+                android:text="查看我的订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

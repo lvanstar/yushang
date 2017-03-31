@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xian3"
+    android:orientation="vertical">
+    <RelativeLayout
+        style="@style/Title"
+        android:background="@color/bg">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="取消"
+            android:textColor="@color/defaulttxt"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑昵称"
+            android:textColor="@color/defaulttxt"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="完成"
+            android:textColor="@color/band"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/et_nikeName"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/text_view_boder5"
+            android:gravity="center_vertical|left"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:maxLength="15"
+            android:imeOptions="actionSearch"
+            />
+        <RelativeLayout
+            android:id="@+id/iv_remove"
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/guanbi"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
